@@ -1,0 +1,6 @@
+<div class="row noPadding noMargin width100 blackBg">
+    <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 floatLeft flex align center justify middle headerWrap" routerLink = '/home'>
+        <app-readsvg [color]="'white'" class="height100 width100" [hidden]="!(header === 'Read')"></app-readsvg>
+        <img src="../../../assets/write.png" alt="Write Icon" height="50px" [hidden]="!(header === 'Write')">
+    </div>
+</div>

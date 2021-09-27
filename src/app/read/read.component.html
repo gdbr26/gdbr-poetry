@@ -1,0 +1,25 @@
+<app-header [headFor]="'read'"></app-header>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 readHam floatRight menuToggler flex justify middle align center" (click)="toggleMenu()">
+    <img src="../../../assets/ham.svg" alt="Read Menu" height="20px" class="floatRight">
+</div>
+<div class="row readWrap noMargin">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 readArea black ">
+        <div id="poemTitle" class="title titleFont col-md-10" [attr.contenteditable]="isEditable">
+            {{ selectedPoem.title }}
+        </div>
+        <div id="poemDesc" class="desc height100 descFont col-md-10" [innerHTML]="selectedPoem.description" [attr.contenteditable]="isEditable"></div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 blackBg white height100 poemListWrap" [hidden]='!showMenu'>
+        <div 
+            class="poemSelector cursorPointer descFont" 
+            *ngFor="let poemKey of poemsKeys" 
+            (click)="poemClicked(poemKey)">
+            <img src="../../assets/rarrow.svg" alt="Right Arrow" class="rArrow">{{ poemsList[poemKey].title}}
+        </div>
+    </div>
+</div>
+
+<div class="editWrap">
+    <img src="../../assets/edit-round.png" alt="edit" [hidden]="isEditable" (click)="editPoem()">
+    <img src="../../assets/tick.png" alt="edit" [hidden]="!isEditable" (click)="updatePoem()">
+</div>

@@ -1,0 +1,225 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    &.align {
+        &.top {
+            align-items: flex-start;
+        }
+        &.bottom {
+            align-items: flex-end;
+        }
+        &.middle {
+            align-items: center;
+        }
+    }
+    &.justify {
+        &.left {
+            justify-content: flex-start;
+        }
+        &.right {
+            justify-content: flex-end;
+        }
+        &.center {
+            justify-content: center;
+        }
+        &.space-bw {
+            justify-content: space-between;
+        }
+        &.space-even {
+            justify-content: space-evenly;
+        }
+        &.space-around {
+            justify-content: space-around;
+        }
+    }
+    .dirColumn {
+        flex-direction: column;
+    }
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.height50 {
+    height: 50%;
+}
+.width50 {
+    width: 50%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textCenter {
+    text-align: center;
+}
+.red {
+    color: red;
+}
+
+.white {
+    background: white;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+/* snack bar global css */
+.success-bar {
+    background-color: #094c09 !important;
+    color: white;
+}
+
+.error-bar {
+    background-color: #9c1a05 !important;
+    color: white;
+}
+
+.warning-bar {
+    background-color: #ffff00 !important;
+    color: black;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.blackBg {
+    background: black;
+}
+
+.whiteBg {
+    background: white;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.absolute {
+    position: absolute;
+}
+
+//   scroll Bar
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(197, 197, 197);
+    border-radius: 2vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 163, 163);
+}
+
+@media screen and (min-width: 0px) {
+    .titleFont {
+        font-size: 5vw;
+    }
+    .descFont {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .titleFont {
+        font-size: 5vw;
+    }
+    .descFont {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .titleFont {
+        font-size: 5vw;
+    }
+    .descFont {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .titleFont {
+        font-size: 4vw;
+    }
+    .descFont {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .titleFont {
+        font-size: 3vw;
+    }
+    .descFont {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .titleFont {
+        font-size: 2vw;
+    }
+    .descFont {
+        font-size: 1vw;
+    }
+}

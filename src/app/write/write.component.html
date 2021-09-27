@@ -1,0 +1,7 @@
+<app-header [headFor]="'write'"></app-header>
+
+<div class="editorSpace" form>
+    <input [(ngModel)]="title" placeholder="Enter Title of the Poem Here" class="titleHolder" required>
+    <quill-editor [(ngModel)]="poem" placeholder="Enter Text" [styles]="{height: '50vh'}"></quill-editor>
+    <button (click)="onSubmit()" class="submitBtn blackBg white floatRight">Submit</button>
+</div>
