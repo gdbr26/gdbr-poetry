@@ -5,14 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAwozOzex9LcrF0_bQoXCiJPdJDvpK4II0",
-    authDomain: "uppi-poetry.firebaseapp.com",
-    databaseURL: "https://uppi-poetry.firebaseio.com",
-    projectId: "uppi-poetry",
-    storageBucket: "uppi-poetry.appspot.com",
-    messagingSenderId: "1021509100889",
-    appId: "1:1021509100889:web:b93e1ce6a0ad061c499848",
-    measurementId: "G-V47Q14SB8T"
+    apiKey: "AIzaSyDuICurNBLV_Ghn4gF0V1wiqS5cDEY60No",
+    authDomain: "gdbr-poetry.firebaseapp.com",
+    databaseURL: "https://gdbr-poetry-default-rtdb.firebaseio.com",
+    projectId: "gdbr-poetry",
+    storageBucket: "gdbr-poetry.appspot.com",
+    messagingSenderId: "299633539152",
+    appId: "1:299633539152:web:88400a9514ede467bdb955"
   }
 };
 
